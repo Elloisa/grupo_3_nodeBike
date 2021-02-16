@@ -1,41 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProductDetail</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/89c6b6c230.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-</head>
+    <%- include('./partials/head') %>
 <body>
      <!-- Header -->
-     <header>
-        <div class="main-header">
-            <div class="menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
-
-            <div>
-                <span class="brand-name">Node Bike</span>
-            </div>
-            <nav class="navigation-menu">
-                <ul>
-                    <li class="page"><a href="/">Home</a></li>
-                    <li class="page active"><a href="#" id="active">Categorías</a></li>
-                    <li class="page"><a href="/productCart">Carro de Compras</a></li>
-                    <li class="page"><a href="/register">Crear Cuenta</a></li>
-                    <li class="page"><a href="/login">Iniciar Sesión</a></li>
-                </ul>
-            </nav>
-
-            <div class="cart">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-        </div>
-    </header>
+     <%- include('./partials/header') %>
     <!-- End of header -->
 
     <!-- Miga Section -->
@@ -201,11 +169,11 @@
         <!-- EN ADELANTE PARTE DE LORENA -->
 
         <section class="especif-tec">
-            <div>Especificación Técnica</div>
+            <div class="subtitle-spc">Especificación Técnica</div>
             <p>Las especificaciones son para todas las tallas, a no ser que se indique lo contrario.</p>
-            <table>
+            <table class="tabla-spc">
                 <tbody>
-                    <tr><td><i class="fas fa-chevron-down"></i>Conjunto del cuadro</td></tr>
+                    <tr class="first-row"><td><i class="fas fa-chevron-down"></i>Conjunto del cuadro</td></tr>
                     <tr><td><i class="fas fa-chevron-down"></i>Ruedas</td></tr>
                     <tr><td><i class="fas fa-chevron-down"></i>Transmisión</td></tr>
                     <tr><td><i class="fas fa-chevron-down"></i>Componentes</td></tr>
@@ -217,10 +185,10 @@
         </section>
 
         <section class="tallaje">
-            <div>Tallaje y Ajuste</div>
+            <div  class="subtitle-spc">Tallaje y Ajuste</div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi repellendus voluptatum soluta culpa, temporibus inventore corporis fuga. Distinctio, porro quidem amet illum ab sit quisquam architecto est ex laudantium.</p>
-            <table>
-                <thead>
+            <table class="body-table">
+                <thead class="table-head">
                     <tr>
                     <th> </th>
                     <th>S</th>
@@ -251,6 +219,8 @@
             </div>
             <div class="medidas-especificas">
                 <p>Todas las medidas se proporcionan en cm, salvo cuando se indique lo contrario.</p>
+                
+                <div  class="body-table2">
                 <table>
                     <tbody>
                         <tr>
@@ -302,12 +272,12 @@
                             <td>15.5</td>
                         </tr>            
                     </tbody>
-                </table>     
+                </table>   </div>  
             </div>
         </section>
 
         <section class="opinion">
-            <div>Opiniones</div>
+            <div class="subtitle-spc">Opiniones</div>
             <div class="calification">
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
@@ -347,52 +317,7 @@
 <!--End of main body-->
 
 <!-- Footer -->
-<footer>
-    <div class="footer-container">
-
-        <div class="footer-main">
-            <div class="footer-title">
-            <span>REGÍSTRATE A NUESTRO CATÁLOGO</span>
-            </div>
-            <div class="footer-description">Obtén ofertas especiales, productos exclusivos e información de eventos en tu inbox.</div>
-        </div>
-
-        <div class="form-section">
-            <form action="" method="get">
-                <div>
-                    <label for="emailAddress" id="label-email">Email</label>
-                    <input type="email" id="emailAddress">
-                </div>
-
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" name="intereses">
-                        <span id="checkbox-text">
-                            Ver Políticas de Privacidad & Términos
-                        </span>
-                    </label>
-                </div>
-
-                <div class="footer-details">
-                    <p>Al suscribirse recibirá las últimas noticias y eventos asociados al mundo del ciclismo; según la Política de Privacidad & Términos.</p>
-                </div>
-
-                <div>
-                    <a href="#" id="subscribe">SUSCRÍBETE</a>
-                </div>
-
-                <div class="networks">
-                    <i class="fab fa-facebook-square fa-2x"></i>
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                    <i class="fab fa-instagram-square fa-2x"></i>
-                    <i class="fab fa-youtube-square fa-2x"></i>
-                </div>
-                
-            </form>
-        </div>
-        
-    </div>
-</footer>
+<%- include('./partials/footer') %>
 <!-- End of Footer -->
 
     
